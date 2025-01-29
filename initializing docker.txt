@@ -1,0 +1,40 @@
+
+C:\Users\SourceCode>docker --version
+Docker version 27.3.1, build ce12230
+
+C:\Users\SourceCode>docker pull confluentinc/cp-kafka
+Using default tag: latest
+error during connect: in the default daemon configuration on Windows, the docker client must be run with elevated privileges to connect: Post "http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.47/images/create?fromImage=confluentinc%2Fcp-kafka&tag=latest": open //./pipe/docker_engine: The system cannot find the file specified.
+
+C:\Users\SourceCode>docker pull confluentinc/cp-kafka
+Using default tag: latest
+latest: Pulling from confluentinc/cp-kafka
+4d66e5b7a7d9: Download complete
+a3749ea76211: Download complete
+432d3ac62f8b: Download complete
+2a8b1ee0cc7c: Download complete
+7e13fc38f0b3: Download complete
+b9fe7d7b902e: Download complete
+4d1200200a21: Download complete
+a09bb1026942: Download complete
+485bbb2fee19: Download complete
+bc1aa429c05a: Download complete
+4b041791a036: Download complete
+c57360fb79ac: Download complete
+c1b083347de2: Download complete
+5040019df3ec: Download complete
+346a1569c408: Download complete
+Digest: sha256:adc392d28a1e99e8c9a1ec7f087e9e91041837b35b8b7cc8b8a691b82dd581b0
+Status: Downloaded newer image for confluentinc/cp-kafka:latest
+docker.io/confluentinc/cp-kafka:latest
+
+C:\Users\SourceCode>docker pull confluentinc/cp-zookeeper
+Using default tag: latest
+latest: Pulling from confluentinc/cp-zookeeper
+848d4e00419f: Download complete
+51601473dc3c: Download complete
+Digest: sha256:5ca5f3269814804ebf88e4da80f9bdc73df1f70ec66b4b8ed0344159e8d342ec
+Status: Downloaded newer image for confluentinc/cp-zookeeper:latest
+docker.io/confluentinc/cp-zookeeper:latest
+
+C:\Users\SourceCode>
