@@ -1,0 +1,35 @@
+Project Overview
+
+This project implements a real-time data pipeline using Apache Kafka, Apache Spark (Scala), and Docker. The goal is to ingest CSV-based household transaction data, process it using Spark, and observe basic statistical outputs. The system is containerized using Docker for consistent and isolated deployment.
+
+Technology Stack
+
+- Apache Kafka: Used for ingesting real-time data.
+- Apache Spark (Scala): Used for data processing and transformations.
+- Docker: Used to containerize Kafka and Zookeeper services.
+- Scala: Used to write Spark scripts for processing data.
+- CSV Dataset: Used for simulating real-time data input.
+
+Architecture Overview
+
+The architecture includes a Kafka producer that sends CSV data to a Kafka topic. A Spark job written in Scala consumes this data and processes it into a structured DataFrame. Basic statistics such as min, max, and average are calculated. All services are managed using Docker and screenshots are provided to demonstrate the setup.
+
+Data Ingestion
+
+The dataset 'Daily Household Transactions.csv' is used to simulate real-time data. Kafka topics are initialized using Docker containers, and data is sent to the Kafka broker for streaming.
+
+Data Processing
+
+Apache Spark reads the ingested data from Kafka, creates a DataFrame using Scala, and processes it. Descriptive statistics are computed on key fields and displayed. Screenshots from the Spark environment show successful data handling.
+
+Docker Deployment
+
+Kafka and Zookeeper services are deployed using Docker Compose. Initialization steps and Docker pull logs are documented in 'initializing docker.txt'.
+
+Challenges and Future Scope
+
+Setting up Kafka with Docker required configuration tuning. An improvement could be the addition of a data dashboard using tools like Streamlit or Grafana.
+
+Conclusion
+
+The pipeline successfully demonstrates ingestion, processing, and basic analysis of real-time data. The use of Docker and Kafka ensures scalability, while Spark handles real-time computation effectively.
